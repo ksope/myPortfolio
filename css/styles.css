@@ -597,4 +597,7 @@ footer .footer-panel {
     /***********Skills Section***************/
 
     /***********Services Section***************/
+    section.services .container {
+        grid-template-columns: 1fr;
+    }
 }
