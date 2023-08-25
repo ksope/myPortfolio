@@ -254,6 +254,11 @@ section.about p {
     margin-bottom: 1rem;
 }
 
+/* toggle to read more content using JS */
+section.about .container .read-more-content .show-content {
+    display: block;
+}
+
 section.about .container .read-more-content {
     display: none;
 }
@@ -623,5 +628,17 @@ footer .footer-panel {
     section.contact .container p {
         width: 80vw;
         margin: 0.5rem auto 0;
+    }
+
+    /***********Footer***************/
+    footer .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    footer .container ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.4rem;
     }
 }
