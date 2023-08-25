@@ -614,4 +614,14 @@ footer .footer-panel {
         margin: 1.4rem 0 1rem;
         font-size: 2rem;
     }
+
+    /***********Contact Section***************/
+    section.contact .container {
+        width: 94vw;
+    }
+
+    section.contact .container p {
+        width: 80vw;
+        margin: 0.5rem auto 0;
+    }
 }
