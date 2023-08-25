@@ -492,6 +492,9 @@ footer .footer-panel {
         h5 {
             font-size: 0.68rem;
         }
+        .container {
+            width: 94%;
+        }
     }
 
     /***navbar**/
@@ -588,6 +591,7 @@ footer .footer-panel {
         width: 16rem;
         height: 16rem;
     }
+
     /************About Section***************/
     section.about .container {
         grid-template-columns: 1fr;
@@ -599,5 +603,15 @@ footer .footer-panel {
     /***********Services Section***************/
     section.services .container {
         grid-template-columns: 1fr;
+    }
+
+    /***********Portfolio Section***************/
+    section.recent-work .container .projects {
+        grid-template-columns: 1fr;
+    }
+
+    section.recent-work .container h1 {
+        margin: 1.4rem 0 1rem;
+        font-size: 2rem;
     }
 }
