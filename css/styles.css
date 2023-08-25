@@ -588,4 +588,13 @@ footer .footer-panel {
         width: 16rem;
         height: 16rem;
     }
+    /************About Section***************/
+    section.about .container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+    /***********Skills Section***************/
+
+    /***********Services Section***************/
 }
