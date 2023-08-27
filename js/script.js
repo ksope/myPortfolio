@@ -43,16 +43,32 @@ navItems.forEach((item) => {
 });
 
 //read more button
-const readMoreBtn = document.querySelector('.read-more');
-const readMoreContent = document.querySelector('.read-more-content');
+const readMoreBtn = document.querySelector(".read-more");
+const readMoreContent = document.querySelector(".read-more-content");
 
 //show more pararaphs on clicking read more link
-readMoreBtn.addEventListener('click',()=>{
+readMoreBtn.addEventListener("click", () => {
     readMoreContent.classList.toggle(".show-content");
-    if(readMoreContent.classList.contains('show-content')){
-        readMoreBtn.textContent = 'Show less';
-    }
-    else{
+    if (readMoreContent.classList.contains("show-content")) {
+        readMoreBtn.textContent = "Show less";
+    } else {
         readMoreBtn.textContent = "Show more";
     }
-})
+});
+
+//add box shadow on scroll in phone screen view
+window.addEventListener("scroll", () => {
+    //show box shadow when scrolling down
+    document
+        .querySelector("nav")
+        .classList.toggle("show-box-shadow", window.scrollY > 0);
+});
+
+//show or hide skills items
+const skillItems = document.querySelectorAll("section.skills .skill");
+
+skillItems.forEach((skill) => {
+    skill.querySelector(".head").addEventListener("click", () => {
+        skill.querySelector(".items").classList.toggle("show-items");
+    });
+});
