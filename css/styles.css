@@ -269,7 +269,7 @@ section.about p {
 }
 
 /* toggle to read more content using JS */
-section.about .container .read-more-content .show-content {
+section.about .container .read-more-content.show-content {
     display: block;
 }
 

@@ -48,7 +48,7 @@ const readMoreContent = document.querySelector(".read-more-content");
 
 //show more pararaphs on clicking read more link
 readMoreBtn.addEventListener("click", () => {
-    readMoreContent.classList.toggle(".show-content");
+    readMoreContent.classList.toggle("show-content");
     if (readMoreContent.classList.contains("show-content")) {
         readMoreBtn.textContent = "Show less";
     } else {
