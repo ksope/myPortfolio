@@ -388,6 +388,11 @@ section.services .container .service:nth-child(3) span {
 }
 
 /***********************PORTFOLIO SECTION************************/
+section.recent-work .container .projects .project #r-native-pic {
+    max-height: 280px;
+    object-fit: scale-down;
+}
+
 section.recent-work h1 {
     text-align: left;
     margin: 3rem 0 1rem;
